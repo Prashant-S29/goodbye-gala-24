@@ -20,7 +20,11 @@ const HERO = () => {
   const checkAnswer = (e: any) => {
     e.preventDefault();
 
-    if (answer.toLowerCase() === "prashant") {
+    if (
+      answer.trim().toLowerCase() === "prashant" ||
+      answer.trim().toLowerCase() === "prashant singh" ||
+      answer.trim().toLowerCase() === "prashant singh hooda"
+    ) {
       setIsAnswerCorrect(true);
       setShowGIF(true);
       setAnswer("");
@@ -201,7 +205,9 @@ const HERO = () => {
                   <div className="text-gray-200 block sm:flex items-center gap-5">
                     <div className="leading-tight">
                       <div>
-                        <span className="text-[16px] xl:text-[18px]">Date</span>
+                        <span className="text-[16px] text-gray-400 xl:text-[18px]">
+                          Date
+                        </span>
                       </div>{" "}
                       <div>
                         <span className="text-[15px] sm:text-[18px] xl:text-[22px] font-medium sm:font-semibold">
@@ -211,7 +217,9 @@ const HERO = () => {
                     </div>
                     <div className="leading-tight mt-2 sm:mt-0">
                       <div>
-                        <span className="text-[16px] xl:text-[18px]">Time</span>
+                        <span className="text-[16px] text-gray-400 xl:text-[18px]">
+                          Time
+                        </span>
                       </div>{" "}
                       <div>
                         <span className="text-[15px] sm:text-[18px] xl:text-[22px] font-medium sm:font-semibold">
@@ -221,7 +229,7 @@ const HERO = () => {
                     </div>
                     <div className="leading-tight mt-2 sm:mt-0">
                       <div>
-                        <span className="text-[16px] xl:text-[18px]">
+                        <span className="text-[16px] text-gray-400 xl:text-[18px]">
                           Venue
                         </span>
                       </div>{" "}
@@ -240,7 +248,7 @@ const HERO = () => {
                     <div className=" mt-3">
                       <form
                         onSubmit={checkAnswer}
-                        className="max-[321px]:block flex items-center gap-2 text-white"
+                        className="max-[376px]:block flex items-center gap-2 text-white"
                       >
                         <div>
                           <input
@@ -254,7 +262,7 @@ const HERO = () => {
                             className="bg-[#4A525D] text-[14px] placeholder:text-gray-200  outline-none border border-gray-500 px-5 py-2 rounded-full"
                           />
                         </div>
-                        <div className="max-[321px]:mt-2">
+                        <div className="max-[376px]:mt-2">
                           <button
                             type="submit"
                             className="bg-blue-700 text-[14px] placeholder:text-gray-200  outline-none px-5 py-2 rounded-full"
@@ -284,7 +292,7 @@ const HERO = () => {
                       </div>
                     )}
                   </div>
-                  <div className="w-full h-[100px]" />
+                  <div className="w-full h-[200px] md:h-[100px]" />
                 </div>
               </div>
             </div>
