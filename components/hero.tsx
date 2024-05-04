@@ -140,6 +140,11 @@ const HERO = () => {
                     <span className="font-semibold">Enjoyyyyy!!</span>
                   </span>
                 </div>
+                <div className="px-7 mt-2 w-full lg:w-[700px]">
+                  <span className="text-gray-300 text-[14px] lg:text-[15px]">
+                    *double click to change your emoji
+                  </span>
+                </div>
               </div>
               <div className=" w-full h-full flex p-5 ">
                 <div className="w-full">
@@ -193,35 +198,35 @@ const HERO = () => {
                     </div>
                   </div>
                   <div className="w-full h-[0.5px] bg-gray-500 my-5" />
-                  <div className="text-gray-200 flex items-center gap-5">
+                  <div className="text-gray-200 block sm:flex items-center gap-5">
                     <div className="leading-tight">
                       <div>
-                        <span className="text-[13px] sm:text-[14px] xl:text-[15px]">Date</span>
+                        <span className="text-[16px] xl:text-[18px]">Date</span>
                       </div>{" "}
                       <div>
-                        <span className="text-[16px] sm:text-[18px] xl:text-[22px] font-semibold">
+                        <span className="text-[15px] sm:text-[18px] xl:text-[22px] font-medium sm:font-semibold">
                           17th May, 2024
                         </span>
                       </div>
                     </div>
-                    <div className="leading-tight">
+                    <div className="leading-tight mt-2 sm:mt-0">
                       <div>
-                        <span className="text-[13px] sm:text-[14px] xl:text-[15px]">Time</span>
+                        <span className="text-[16px] xl:text-[18px]">Time</span>
                       </div>{" "}
                       <div>
-                        <span className="text-[16px] sm:text-[18px] xl:text-[22px] font-semibold">
+                        <span className="text-[15px] sm:text-[18px] xl:text-[22px] font-medium sm:font-semibold">
                           05:00 PM onwards
                         </span>
                       </div>
                     </div>
-                    <div className="leading-tight">
+                    <div className="leading-tight mt-2 sm:mt-0">
                       <div>
-                        <span className="text-[13px] sm:text-[14px] xl:text-[15px]">
+                        <span className="text-[16px] xl:text-[18px]">
                           Venue
                         </span>
                       </div>{" "}
                       <div>
-                        <span className="text-[16px] sm:text-[18px] xl:text-[22px] font-semibold">
+                        <span className="text-[15px] sm:text-[18px] xl:text-[22px] font-medium sm:font-semibold">
                           Civil Block, SKIT
                         </span>
                       </div>
